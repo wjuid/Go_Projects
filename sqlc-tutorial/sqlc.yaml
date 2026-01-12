@@ -1,0 +1,11 @@
+version: "2"
+cloud:
+  project: "sqlc_01KE9P8SG7BFF1CKTNZ36CB26G"
+sql:
+  - engine: "mysql"
+    queries: "query.sql"
+    schema: "schema.sql"
+    gen:
+      go:
+        package: "tutorial"
+        out: "tutorial"
